@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Show</title>
+    <link href="    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">Bootstrap Tests</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Expandir navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="$ctrl.loadSection('home')">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="$ctrl.loadSection('carousel-card')">Carousell Card</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="$ctrl.loadSection('form')">Form</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="content ">
+
+  <section id="home" class="my-5">
+    <div class="container">
+      <div class="row justify-content-center ">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header bg-dark text-white">
+              Bootstrap Testes
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Esta pagina foi criada para testar os recursos do Bootstrap. O Bootstrap é um framework front-end popular que facilita o desenvolvimento de sites responsivos e compatíveis com todos os navegadores modernos.
+              <p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="carousel-card" class="my-5">
+    <div class="container">
+      <div id="carouselTestes" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselTestes" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselTestes" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselTestes" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center bg-dark text-white" style="height:250px;">
+              <div class="text-center">
+                <h3>🚀 Desenvolvimento Ágil</h3>
+                <p>Bootstrap acelera o desenvolvimento com componentes prontos e reutilizáveis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center bg-dark text-white" style="height:250px;">
+              <div class="text-center">
+                <h3>📱 Responsividade Total</h3>
+                <p>Layouts que se adaptam automaticamente para qualquer tamanho de tela.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center bg-dark text-white" style="height:250px;">
+              <div class="text-center">
+                <h3>🌐 Compatibilidade Universal</h3>
+                <p>Bootstrap garante a compatibilidade com todos os navegadores modernos.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTestes" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header bg-dark text-white">
+              Por que usar Bootstrap?
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                O Bootstrap é popular devido à sua facilidade de uso, grande variedade de componentes pré-construídos, sistema robusto de grid e documentação clara. Facilita prototipagem rápida e garante consistência visual entre navegadores.
+              <p>
+              <ul>
+                <li>🛠️ Desenvolvimento rápido e eficiente;</li>
+                <li>📱 Alta responsividade;</li>
+                <li>🎨 Variedade de componentes pré-prontos;</li>
+                <li>🌐 Compatibilidade entre navegadores;</li>
+                <li>📚 Documentação abrangente e comunidade ativa.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="form">
+    <div class="d-flex align-items-center min-vh-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 register-form">
+            <h1 class="text-center">Registro</h1>
+            <div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="email" name="email">
+                <span id="error-message-email" style="color: red;"></span>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="username" name="username">
+                <span id="error-message-username" style="color: red;"></span>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="(XX) 9XXXX-XXXX" required maxlength="15">
+                <span id="error-message-phone" style="color: red;"></span>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="password" name="password">
+                <span id="error-message-password" style="color: red;"></span>
+              </div>
+              <div class="mb-3">
+                <label for="password-confirmation" class="form-label">Confirme a senha</label>
+                <input type="password" class="form-control" id="password-confirmation" name="passwordConfirmation">
+                <span id="error-message-password-confirmation" style="color: red;"></span>
+              </div>
+              <button class="btn bg-dark w-100 text-white"  id="btn-register">Registrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
