@@ -1,0 +1,298 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Show</title>
+  <!-- Add Font Awesome CDN for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-dark bg-dark">
+  <div id="title">
+    <a class="navbar-brand" href="#home">Cadastro de usuários</a>
+  </div>
+</div>
+<div class="menu">
+  <ul class="navbar-nav ms-auto text-center">
+    <br></br>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="$ctrl.loadSection('personal-informations')">
+        <i class="fas fa-user"></i> Informações Pessoais
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="$ctrl.loadSection('contact')">
+        <i class="fas fa-phone-alt"></i> Contato
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="$ctrl.loadSection('access-credentials')">
+        <i class="fas fa-key"></i> Credenciais de Acesso
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="$ctrl.loadSection('personal-informations')">
+        <i class="fas fa-briefcase"></i> Informações Profissionais
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="$ctrl.loadSection('preferences-social-network')">
+        <i class="fas fa-users"></i> Preferências e Redes Sociais
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="$ctrl.loadSection('bancary-data')">
+        <i class="fas fa-credit-card"></i> Pagamento e Dados Bancários
+      </a>
+    </li>
+  </ul>
+  <img class="logo-nav" src="bootstrap-solid.svg" width="90" height="90" alt="">
+</div>
+<div class="content">
+
+  <section id="personal-informations" class="my-5">
+    <div class="d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 default-form">
+            <h1 class="text-center">Informações Pessoais</h1>
+            <div id="personal-informations-form">
+              <div class="mb-3">
+                <label for="full-name" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="full-name" name="full-name">
+              </div>
+              <div class="mb-3">
+                <label for="birthdate" class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control" id="birthdate" name="birthdate">
+              </div>
+              <div class="mb-3">
+                <label for="gender" class="form-label">Sexo</label>
+                <select class="form-select" id="gender" name="gender">
+                  <option value="Masculino">Masculino</option>
+                  <option value="Feminino">Feminino</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" name="cpf">
+              </div>
+              <div class="mb-3">
+                <label for="rg" class="form-label">RG</label>
+                <input type="text" class="form-control" id="rg" name="rg">
+              </div>
+              <div class="mb-3">
+                <label for="civil-status" class="form-label">Estado Civil</label>
+                <select class="form-select" id="civil-status" name="civil-status">
+                  <option value="Solteiro(a)">Solteiro(a)</option>
+                  <option value="Casado(a)">Casado(a)</option>
+                  <option value="Divorciado(a)">Divorciado(a)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="profile-photo" class="form-label">Foto de Perfil</label>
+                <input type="file" class="form-control" id="profile-photo" name="profile-photo">
+              </div>
+              <div class="mb-3">
+                <label for="digital-signature" class="form-label">Assinatura Digital</label>
+                <input type="file" class="form-control" id="digital-signature" name="digital-signature">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="my-5">
+    <div class="d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 default-form">
+            <h1 class="text-center">Contato</h1>
+            <div id="contact-form">
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+              </div>
+              <div class="mb-3">
+                <label for="cellphone" class="form-label">Celular</label>
+                <input type="text" class="form-control" id="cellphone" name="cellphone">
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Endereço</label>
+                <textarea class="form-control" id="address" name="address"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep" name="cep">
+              </div>
+              <div class="mb-3">
+                <label for="country" class="form-label">País</label>
+                <select class="form-select" id="country" name="country">
+                  <option value="Brasil">Brasil</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="access-credentials" class="my-5">
+    <div class="d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 default-form">
+            <h1 class="text-center">Credenciais de Acesso</h1>
+            <div id="access-credentials-form">
+              <div class="mb-3">
+                <label for="username" class="form-label">Nome de Usuário</label>
+                <input type="text" class="form-control" id="username" name="username">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="password" name="password">
+              </div>
+              <div class="mb-3">
+                <label for="confirm-password" class="form-label">Confirmação de Senha</label>
+                <input type="password" class="form-control" id="confirm-password" name="confirm-password">
+              </div>
+              <div class="mb-3">
+                <label for="security-question" class="form-label">Pergunta Secreta</label>
+                <select class="form-select" id="security-question" name="security-question">
+                  <option value="Sua primeira escola?">Sua primeira escola?</option>
+                  <option value="Nome do seu primeiro animal?">Nome do seu primeiro animal?</option>
+                  <option value="Nome de solteira da sua mãe?">Nome de solteira da sua mãe?</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="security-answer" class="form-label">Resposta Secreta</label>
+                <input type="text" class="form-control" id="security-answer" name="security-answer">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="accept-terms">
+                <label for="accept-terms" class="form-check-label">Aceito os Termos de Uso</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="preferences-social-network" class="my-5">
+    <div class="d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 default-form">
+            <h1 class="text-center">Preferências e Redes Sociais</h1>
+            <div id="preferences-social-network-form">
+              <div class="mb-3">
+                <label for="favorite-music" class="form-label">Gênero Musical Favorito</label>
+                <input type="text" class="form-control" id="favorite-music" name="favorite-music">
+              </div>
+              <div class="mb-3">
+                <label for="hobbies" class="form-label">Hobbies</label>
+                <div>
+                  <input type="checkbox" id="hobby-football" name="hobbies" value="Futebol"> Futebol
+                  <input type="checkbox" id="hobby-reading" name="hobbies" value="Leitura"> Leitura
+                  <input type="checkbox" id="hobby-travel" name="hobbies" value="Viagens"> Viagens
+                  <input type="checkbox" id="hobby-music" name="hobbies" value="Música"> Música
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="facebook" class="form-label">Facebook</label>
+                <input type="text" class="form-control" id="facebook" name="facebook">
+              </div>
+              <div class="mb-3">
+                <label for="instagram" class="form-label">Instagram</label>
+                <input type="text" class="form-control" id="instagram" name="instagram">
+              </div>
+              <div class="mb-3">
+                <label for="linkedin" class="form-label">LinkedIn</label>
+                <input type="text" class="form-control" id="linkedin" name="linkedin">
+              </div>
+              <div class="mb-3">
+                <label for="email-notifications" class="form-label">Notificações via E-mail</label>
+                <select class="form-select" id="email-notifications" name="email-notifications">
+                  <option value="Sim">Sim</option>
+                  <option value="Não">Não</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bancary-data" class="my-5">
+    <div class="d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 default-form">
+            <h1 class="text-center">Pagamento e Dados Bancários</h1>
+            <div id="bancary-data-form">
+              <div class="mb-3">
+                <label for="credit-card-number" class="form-label">Número do Cartão de Crédito</label>
+                <input type="text" class="form-control" id="credit-card-number" name="credit-card-number">
+              </div>
+              <div class="mb-3">
+                <label for="card-expiry" class="form-label">Data de Vencimento do Cartão</label>
+                <input type="month" class="form-control" id="card-expiry" name="card-expiry">
+              </div>
+              <div class="mb-3">
+                <label for="security-code" class="form-label">Código de Segurança</label>
+                <input type="number" class="form-control" id="security-code" name="security-code">
+              </div>
+              <div class="mb-3">
+                <label for="bank" class="form-label">Banco</label>
+                <select class="form-select" id="bank" name="bank">
+                  <option value="Banco do Brasil">Banco do Brasil</option>
+                  <option value="Caixa">Caixa</option>
+                  <option value="Bradesco">Bradesco</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="agency" class="form-label">Agência</label>
+                <input type="text" class="form-control" id="agency" name="agency">
+              </div>
+              <div class="mb-3">
+                <label for="account-number" class="form-label">Conta Corrente</label>
+                <input type="text" class="form-control" id="account-number" name="account-number">
+              </div>
+              <div class="mb-3">
+                <label for="account-type" class="form-label">Tipo de Conta</label>
+                <select class="form-select" id="account-type" name="account-type">
+                  <option value="Poupança">Poupança</option>
+                  <option value="Corrente">Corrente</option>
+                </select>
+              </div>
+              <button class="btn btn-success w-100" id="btn-save">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 - Cadastro de usuários</p>
+      <p>Contato: nicolassouza2504@gmail.com</p>
+    </div>
+  </footer>
+</div>
+
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
