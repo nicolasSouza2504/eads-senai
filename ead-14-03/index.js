@@ -20,12 +20,9 @@ function loadSection(sectionId) {
 
 
     const cpfInput = document.getElementById('cpf');
+
     cpfInput.addEventListener('input', function () {
-
-        if (value.length <= 11) {
-            cpfInput.value = value.replace(/(\d{3})(\d{3}).(\d{3})-(\d{2})/, '$1.$2.$3-$4');
-        }
-
+        cpfInput.value = value.replace(/(\d{3})(\d{3}).(\d{3})-(\d{2})/, '$1.$2.$3-$4');
     });
 
     const phoneInput = document.getElementById('phone');

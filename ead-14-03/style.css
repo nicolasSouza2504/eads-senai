@@ -87,7 +87,6 @@ body {
     margin-left: 250px;
     margin-top: 80px !important;
     min-height: calc(100vh - 150px);
-    background-color: #f4f7fc;
     height: 100vh;
 
 }
@@ -256,9 +255,7 @@ footer {
 
     .content {
         margin-top: 80px !important;
-        background-color: #f4f7fc;
         height: 100vh;
-
     }
 }
 
