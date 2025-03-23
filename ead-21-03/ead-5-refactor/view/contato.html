@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/default.css">
+
+    <title>Formulário de Contato dos usuários cadastrados</title>
+</head>
+<body>
+<button id="navigateBtn" onclick="$ctrl.navigateTo('home.html')">Ir para Cadastro de Usuários</button>
+<div class="container">
+    <h1>Contato</h1>
+    <form>
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Informe o nome do usuário criado aqui.">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="" required></textarea>
+        </div>
+        <button type="submit" onclick="$ctrl.sendRequest()">Enviar</button>
+    </form>
+</div>
+<script src="../controller/contacts.controller.js"></script>
+</body>
+</html>
