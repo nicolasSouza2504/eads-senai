@@ -74,8 +74,6 @@ function addUserToList(userName, userEmail) {
 
 function cleanUserList() {
     document.getElementById("usersList").innerHTML = "";
-
-
 }
 
 
