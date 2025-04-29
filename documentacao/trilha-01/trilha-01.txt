@@ -1,0 +1,166 @@
+Aluno: Nicolas Vieira de Souza - ADS 23
+
+Exercício 1: Escreva uma breve explicação sobre a importância da documentação técnica em um projeto de software. Dê um exemplo de como ela pode ajudar no desenvolvimento futuro.
+
+A documentação técnica é essencial para garantir que todos os envolvidos no projeto, como desenvolvedores, testers e administradores, possam entender a estrutura, funcionalidades e comportamentos do sistema. Ela serve como um guia que facilita a manutenção, evolução e colaboração entre equipes. No futuro, quando novos desenvolvedores se juntarem ao time, a documentação pode acelerar a compreensão do código existente e ajudar a evitar retrabalho.
+
+Exercício 2: Crie uma estrutura de documentação para uma API simples que permite adicionar, editar e excluir produtos de uma loja online.
+
+Documentação da API: Gestão de Produtos
+
+Introdução
+
+Descrição: Esta API permite realizar operações de CRUD (Criar, Ler, Atualizar e Deletar) em produtos de uma loja online.
+
+Base URL: https://api.lojaonline.com/v1
+
+Autenticação
+
+Método: Bearer Token
+
+Endpoint para obter o token: POST /auth/login
+
+Requerendo um header Authorization: Bearer {token} para autenticação nas operações.
+
+EndPoints
+
+Adicionar Produto
+
+Método: POST
+
+Endpoint: /produtos
+
+Parâmetros:
+
+nome (string) - Nome do produto
+
+preco (decimal) - Preço do produto
+
+quantidade (inteiro) - Quantidade disponível
+
+Exemplo de corpo da requisição:
+
+json
+Copiar
+{
+  "nome": "Produto A",
+  "preco": 20.50,
+  "quantidade": 100
+}
+
+Editar Produto
+
+Método: PUT
+
+Endpoint: /produtos/{id}
+
+Parâmetros:
+
+id (inteiro) - ID do produto a ser editado
+
+nome (string) - Nome do produto
+
+preco (decimal) - Novo preço do produto
+
+quantidade (inteiro) - Nova quantidade disponível
+
+Exemplo de corpo da requisição:
+
+json
+Copiar
+{
+  "nome": "Produto B",
+  "preco": 18.50,
+  "quantidade": 80
+}
+
+Excluir Produto
+
+Método: DELETE
+
+Endpoint: /produtos/{id}
+
+Parâmetros:
+
+id (inteiro) - ID do produto a ser excluído
+
+Resposta:
+
+Status 204 No Content se o produto for excluído com sucesso.
+
+Exercício 3: Escreva um tutorial passo a passo que explique ao usuário final como registrar uma nova conta em uma plataforma de e-commerce.
+
+Tutorial: Como Registrar uma Nova Conta em Nossa Plataforma de E-Commerce
+
+Acesse o site da loja
+
+Abra seu navegador e vá para o site da nossa plataforma: https://www.lojaonline.com.
+
+Clique em "Cadastrar"
+
+No canto superior direito da página, clique no botão "Cadastrar" para iniciar o processo de registro.
+
+Preencha suas informações
+
+Na página de cadastro, você precisará fornecer as seguintes informações:
+
+Nome completo
+
+Email (que será usado para login)
+
+Senha (mínimo de 8 caracteres)
+
+Confirmar senha
+
+Clique no botão "Criar Conta".
+
+Verifique seu email
+
+Você receberá um email com um link de verificação. Acesse sua caixa de entrada e clique no link para confirmar seu cadastro.
+
+Login
+
+Após a verificação, volte ao site e faça login com seu email e senha para começar a explorar nossa loja.
+
+Exercício 4: Elabore um exemplo de boas práticas na escrita de documentação de software, aplicando clareza, organização e uso de exemplos.
+
+Exemplo de Boas Práticas em Documentação
+
+Função: calcularDesconto
+
+Descrição: Esta função recebe o valor de uma compra e calcula o desconto com base em uma taxa fixa de 10%.
+
+Parâmetros:
+
+valorCompra (decimal) - O valor total da compra. Exemplo: 100.00
+
+Retorno: (decimal) O valor com o desconto aplicado.
+
+Exemplo de Uso:
+
+$valorOriginal = 100.00;
+$valorComDesconto = calcularDesconto($valorOriginal);
+
+echo "O valor com desconto é: " . $valorComDesconto;
+Exemplo de Resultado:
+
+Entrada: 100.00
+
+Saída: 90.00
+
+Notas:
+
+A taxa de desconto é fixa em 10%. Se desejar aplicar um desconto variável, altere a função.
+
+Exercício 5: Identifique as diferenças entre documentação técnica, de usuário e de API. Explique por que é importante manter cada tipo atualizado e relevante.
+
+Documentação Técnica: Destinada aos desenvolvedores e equipes técnicas, detalha a arquitetura do sistema, código-fonte, estruturas de dados, fluxos de trabalho e problemas conhecidos. Exemplo: Diagramas UML, detalhes sobre implementação de segurança.
+Importância: Manter a documentação técnica atualizada ajuda novos desenvolvedores a entenderem o sistema, facilita a manutenção e a resolução de problemas técnicos.
+
+Documentação de Usuário: Destinada aos usuários finais, descreve como usar o sistema de forma eficaz, com tutoriais e FAQs. Exemplo: Como fazer login, como utilizar funcionalidades do sistema.
+Importância: A documentação de usuário deve ser clara e acessível para garantir que os usuários possam utilizar o sistema com eficiência.
+
+Documentação de API: Detalha as rotas da API, parâmetros e exemplos de respostas. É crucial para integração de sistemas externos. Exemplo: Endpoints de uma API RESTful.
+Importância: Manter a documentação da API atualizada é essencial para garantir que os desenvolvedores que integram com o sistema saibam como interagir corretamente com ele.
+
+A manutenção constante e a relevância de cada tipo de documentação garantem que todos os envolvidos no projeto, seja equipe técnica, usuários ou parceiros externos, possam utilizar o sistema de maneira eficiente, sem equívocos ou desatualizações.

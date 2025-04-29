@@ -1,0 +1,15 @@
+site_name: Documentação do Meu Projeto
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: red
+
+nav:
+  - Home: index.md
+  - Sobre: sobre.md
+
+plugins:
+  - seo
+  - mermaid2

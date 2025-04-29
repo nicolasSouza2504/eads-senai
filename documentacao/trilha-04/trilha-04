@@ -1,0 +1,30 @@
+Aluno: Nicolas Vieira de Souza - ADS 23
+
+Exercício 1: Explique a importância de utilizar sistemas de controle de versão, como Git, no gerenciamento de documentação técnica.
+A utilização de sistemas de controle de versão, como o Git, no gerenciamento de documentação técnica é extremamente importante por várias razões:
+
+Histórico de alterações: O Git permite manter um histórico completo das alterações feitas na documentação, facilitando o rastreamento de quem fez alterações e o que foi alterado, o que é fundamental em projetos colaborativos.
+
+Controle de versões: Diferente de documentos locais, o Git permite o controle de diferentes versões de uma documentação. Isso é crucial quando se tem versões diferentes do software ou mudanças contínuas que precisam ser refletidas na documentação.
+
+Facilidade na colaboração: Git facilita a colaboração entre múltiplos desenvolvedores, permitindo que várias pessoas editem a documentação ao mesmo tempo, sem conflitos, por meio de branches e merges.
+
+Segurança: O uso do Git oferece um backup seguro da documentação na nuvem, seja no GitHub, GitLab, Bitbucket ou outros, protegendo a documentação de falhas no sistema local.
+
+
+Exercício 2: Crie um repositório Git para seu projeto MKDocs e faça o commit e push da documentação inicial.
+
+Exercício 3: Realize o deploy da sua documentação no GitHub Pages utilizando o comando mkdocs gh-deploy. Após a publicação, acesse o link gerado e verifique
+
+Exercício 4: Configure um sistema de deploy contínuo para a documentação utilizando GitHub Actions. Teste se a documentação é atualizada automaticamente ao fazer mudanças no repositório.
+
+Exercício 5: Pesquise sobre como organizar múltiplas versões da documentação com MKDocs e implemente uma solução que permita ao usuário alternar entre versões.
+
+Instalar a extensão mkdocs-versioning:
+
+pip install mkdocs-versioning
+
+Gerenciar as versões da documentação: Ao usar a extensão mkdocs-versioning, você pode criar tags no seu repositório Git para representar versões específicas da documentação. Por exemplo:
+
+git tag v1.0.0
+git push origin v1.0.0

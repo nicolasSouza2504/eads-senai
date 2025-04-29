@@ -1,0 +1,63 @@
+Aluno: Nicolas Vieira de Souza - ADS 23
+
+Exercício 1: Explique o que é o MKDocs e quais são suas principais vantagens em relação a outras ferramentas de documentação.
+
+MKDocs é uma ferramenta estática de geração de sites voltada para a criação de documentação de projetos. Ele utiliza arquivos Markdown para estruturar o conteúdo e gera sites de documentação responsivos e fáceis de navegar. Algumas das vantagens do MKDocs em relação a outras ferramentas de documentação são:
+
+Simplicidade: O MKDocs é fácil de instalar e configurar, com uma configuração mínima para começar a gerar documentação.
+
+Uso de Markdown: A criação de conteúdo é feita em Markdown, um formato simples e amplamente utilizado, facilitando a criação e manutenção de documentos.
+
+Temas prontos e personalizáveis: O MKDocs oferece temas prontos, como o "material", que proporcionam um visual moderno e atraente para a documentação.
+
+Facilidade de navegação: Ele gera automaticamente uma navegação de fácil acesso com base nos arquivos de documentação, tornando a leitura intuitiva.
+
+Exercício 2: Instale o MKDocs em sua máquina e crie um novo projeto de documentação com o nome "Documentação do Meu Projeto". Configure o nome do site e o tema "material".
+
+
+Exercício 3: Escreva um exemplo simples de documentação usando Markdown que inclua um título, uma lista ordenada e um bloco de código. Visualize essa documentação localmente usando o servidor do MKDocs.
+
+# Documentação do Meu Projeto
+
+Bem-vindo à documentação do meu projeto!
+
+## Lista de Tarefas
+
+1. Instalar o MKDocs
+2. Criar o projeto
+3. Configurar o tema
+4. Adicionar conteúdo
+
+## Exemplo de Código
+
+Aqui está um exemplo de código em Python:
+
+```python
+def ola_mundo():
+    print("Olá, Mundo!")
+go
+
+Copiar
+
+Depois de editar o arquivo, execute o servidor novamente com:
+
+```bash
+mkdocs serve
+
+Acesse http://127.0.0.1:8000/ para visualizar a documentação com o conteúdo acima.
+
+Exercício 4: Modifique o arquivo mkdocs.yml para alterar o nome do site e adicione uma seção de navegação personalizada com pelo menos duas páginas (index.md e uma nova página de conteúdo).
+
+
+Exercício 5: Explique como o Markdown facilita a criação de conteúdo em projetos de documentação e liste pelo menos três vantagens de usar o Markdown.
+
+O Markdown é uma linguagem de marcação simples e fácil de usar, ideal para criar conteúdo em projetos de documentação. Ele permite que os usuários escrevam conteúdo formatado de maneira rápida e intuitiva, sem a necessidade de aprender HTML ou outras linguagens de marcação mais complexas.
+
+Três vantagens de usar o Markdown:
+
+Facilidade de uso: A sintaxe do Markdown é simples, intuitiva e legível, permitindo que os autores se concentrem no conteúdo em vez de na formatação.
+
+Portabilidade: O conteúdo escrito em Markdown pode ser facilmente convertido para diferentes formatos (HTML, PDF, etc.) e visualizado em várias plataformas sem problemas de compatibilidade.
+
+Leveza e flexibilidade: O Markdown é leve e não exige ferramentas pesadas para ser utilizado, tornando-o ideal para projetos com documentação constante e atualizações frequentes.
+

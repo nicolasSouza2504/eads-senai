@@ -1,0 +1,108 @@
+Aluno: Nicolas Vieira de Souza - ADS 23
+
+Exercício 1: Escreva uma descrição clara e concisa sobre o processo de instalação de um software de sua escolha, evitando frases longas e jargões desnecessários.
+Instalação do Visual Studio Code:
+
+Acesse o site oficial do Visual Studio Code: https://code.visualstudio.com/.
+
+Clique no botão de download correspondente ao seu sistema operacional (Windows, macOS ou Linux).
+
+Abra o arquivo baixado e siga as instruções do assistente de instalação.
+
+Após a instalação, abra o Visual Studio Code.
+
+Pronto! Agora você pode começar a usar o Visual Studio Code para programar.
+
+Exercício 2: Reescreva o parágrafo abaixo de forma mais objetiva e direta:
+Parágrafo original:
+
+"O sistema permite que os usuários façam upload de arquivos, que serão armazenados no servidor para que, posteriormente, os administradores possam acessá-los."
+
+Reescrita: "O sistema permite o upload de arquivos, que ficam armazenados no servidor para acesso dos administradores."
+
+Exercício 3: Organize a seguinte lista de instruções usando títulos, subtítulos e listas ordenadas:
+Instalação e Configuração do Node.js
+
+Instalar o Node.js
+
+Acesse https://nodejs.org/.
+
+Baixe a versão recomendada para a maioria dos usuários.
+
+Execute o instalador e siga as instruções na tela.
+
+Configurar o Ambiente
+
+Abra o terminal ou prompt de comando.
+
+Defina as variáveis de ambiente, se necessário, com o comando:
+
+export NODE_HOME=/usr/local/lib/node
+export PATH=$NODE_HOME/bin:$PATH
+
+Testar a Instalação
+
+No terminal, digite o comando para verificar se o Node.js foi instalado corretamente:
+
+node -v
+
+O terminal deve exibir a versão do Node.js instalada.
+
+Exercício 4: Crie um exemplo de código que ilustre uma função simples (pode ser em qualquer linguagem de programação) e inclua-o em uma explicação sobre como essa função pode ser utilizada.
+Exemplo em Python:
+
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+# Uso da função
+nome_usuario = "Carlos"
+print(saudacao(nome_usuario))
+Explicação: A função saudacao() recebe um parâmetro, nome, e retorna uma mensagem de saudação personalizada. No exemplo acima, ao passar o nome "Carlos" para a função, ela retorna "Olá, Carlos!", que é então exibido no console.
+
+
+
+Exercício 5: Crie um diagrama de fluxo que represente o processo de login em um sistema (entrada de dados, verificação, sucesso/erro).
+Vou criar um diagrama de fluxo simples para o processo de login. Vamos ilustrar isso visualmente:
+
+Diagrama de Fluxo:
+
+            |   Início         |
+                    |
+                    v
+            | Entrada de dados  |
+            | (usuário e senha) |
+                    |
+                    v
+            | Verificar credenciais    |
+            | (usuário e senha válidos?)|
+                    |
+            ------------------
+            |                |
+          Sim               Não
+            |                |
+            v                v
+ | Login bem-sucedido |  | Erro de autenticação|
+            |                       |
+            v                       v
+     |    Fim          |      |    Mostra mensagem erro |
+
+
+Explicação:
+
+O processo começa com a entrada de dados do usuário (nome de usuário e senha).
+
+O sistema verifica se as credenciais são válidas.
+
+Se forem válidas, o login é bem-sucedido.
+
+Se forem inválidas, o sistema retorna um erro de autenticação.
+
+O processo termina após a autenticação.
+
+Esse diagrama de fluxo ajuda a entender claramente o processo de login de um sistema, destacando as decisões e os caminhos possíveis.
+
+
+
+
+
+

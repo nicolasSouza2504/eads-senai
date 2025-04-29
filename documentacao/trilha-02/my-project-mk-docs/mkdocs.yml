@@ -1,0 +1,6 @@
+site_name: Meu Site
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Conteúdo: conteudo.md

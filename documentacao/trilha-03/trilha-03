@@ -1,0 +1,29 @@
+Aluno: Nicolas Vieira de Souza - ADS 23
+
+Exercício 1: Descreva a estrutura de diretórios padrão de um projeto MKDocs e explique o propósito de cada diretório e arquivo.
+A estrutura de diretórios padrão de um projeto MKDocs é a seguinte:
+
+my_project/mkdocs.yml
+my_project/docs/index.md
+
+docs/: Este diretório contém todos os arquivos de documentação em formato Markdown (.md). A página principal da documentação é geralmente o index.md, e outras páginas podem ser adicionadas a este diretório.
+
+index.md: Arquivo de entrada principal da documentação. É a primeira página que o MKDocs renderiza quando você acessa o site.
+
+mkdocs.yml: Arquivo de configuração principal. Ele define o nome do site, temas, navegação, plugins, e outras configurações importantes do projeto.
+
+Exercício 2: Crie um projeto MKDocs e adicione uma nova página sobre.md no
+diretório docs/. Configure a navegação no arquivo mkdocs.yml para incluir essa
+página.
+
+Exercício 3: Personalize a paleta de cores do tema 'Material' no MKDocs,
+modificando as cores primária e de destaque. Teste a visualização localmente.
+
+Exercício 4: Instale e configure o plugin de SEO no MKDocs. Explique como a
+utilização desse plugin pode ajudar na otimização de motores de busca.
+
+Exercício 5: Pesquise sobre outros plugins disponíveis para o MKDocs e escolha
+um para instalar. Escreva um exemplo de como esse plugin pode melhorar sua
+documentação
+
+Respostas na documentação criada.
