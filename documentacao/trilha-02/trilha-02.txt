@@ -37,7 +37,6 @@ def ola_mundo():
     print("Olá, Mundo!")
 go
 
-Copiar
 
 Depois de editar o arquivo, execute o servidor novamente com:
 

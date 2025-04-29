@@ -40,8 +40,6 @@ quantidade (inteiro) - Quantidade disponível
 
 Exemplo de corpo da requisição:
 
-json
-Copiar
 {
   "nome": "Produto A",
   "preco": 20.50,
@@ -66,8 +64,6 @@ quantidade (inteiro) - Nova quantidade disponível
 
 Exemplo de corpo da requisição:
 
-json
-Copiar
 {
   "nome": "Produto B",
   "preco": 18.50,
@@ -142,6 +138,7 @@ $valorOriginal = 100.00;
 $valorComDesconto = calcularDesconto($valorOriginal);
 
 echo "O valor com desconto é: " . $valorComDesconto;
+
 Exemplo de Resultado:
 
 Entrada: 100.00
