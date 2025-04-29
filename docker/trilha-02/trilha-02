@@ -1,0 +1,25 @@
+Aluno: Nicolas Vieira de Souza - ADS 2023
+
+Descreva as diferenças entre imagens e contêineres.
+
+● Descreva as diferenças entre imagens e contêineres.
+R: Imagens são utilizadas para buildar um container, são como um molde, enquanto o container é a imagem montada.
+
+● Acesse o Docker Hub e pesquise por uma imagem de banco de dados como
+  MySQL. Baixe e execute a imagem no seu ambiente local.
+
+
+FROM mysql:latest
+
+ENV MYSQL_ROOT_PASSWORD=rootpassword
+ENV MYSQL_DATABASE=mydatabase
+ENV MYSQL_USER=myuser
+ENV MYSQL_PASSWORD=mypassword
+
+EXPOSE 3306
+
+CMD ["mysqld"]
+
+
+● Execute docker run alpine e veja como diferentes imagens podem ser usadas.
+

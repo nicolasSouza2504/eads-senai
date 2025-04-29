@@ -1,0 +1,11 @@
+Aluno: Nicolas Vieira de Souza - ADS 2023
+
+1. Descreva como o cache de camadas acelera a construção de imagens.
+
+O cache de camadas no Docker acelera a construção de imagens reutilizando camadas que não foram alteradas.
+ Cada instrução no Dockerfile cria uma camada, e o Docker armazena essas camadas no cache. Quando uma construção
+  é feita novamente, o Docker verifica se a camada foi alterada; se não, ele reutiliza a camada do cache, evitando
+   a recriação. Isso acelera o processo de construção e economiza recursos, tornando a construção de imagens mais
+    eficiente, especialmente em ambientes de desenvolvimento onde mudanças no código são frequentes.
+
+

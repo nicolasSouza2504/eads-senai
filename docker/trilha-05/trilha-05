@@ -1,0 +1,6 @@
+Aluno: Nicolas Vieira de Souza - ADS 2023
+
+
+* Explique o mapeamento de portas no Docker.
+
+Resposta: O mapeamento de portas no Docker permite que você expõe portas internas de um contêiner para serem acessadas externamente, seja pela máquina host ou por outros contêineres na rede. O mapeamento é feito usando a sintaxe host:container no arquivo docker-compose.yml.

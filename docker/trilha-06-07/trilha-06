@@ -1,0 +1,10 @@
+Aluno: Nicolas Vieira de Souza - ADS 2023
+
+Descreva a importância de volumes em ambientes de produção.
+
+R: Volumes são cruciais em ambientes de produção por garantirem a persistência de dados.
+ Eles permitem que dados sejam armazenados de forma independente do ciclo de vida dos contêineres,
+ garantindo que informações importantes não sejam perdidas ao remover ou reiniciar contêineres. Além disso,
+ volumes facilitam backups, recuperação de dados, e escala da aplicação, oferecendo um meio eficiente e seguro
+  para gerenciar dados em grande escala. Eles também melhoram o desempenho e a portabilidade dos dados entre
+  diferentes contêineres e ambientes, essenciais para a continuidade e a resiliência de aplicações.

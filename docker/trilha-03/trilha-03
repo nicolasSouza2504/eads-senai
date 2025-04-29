@@ -1,0 +1,21 @@
+Aluno: Nicolas Vieira de Souza - ADS 2023
+
+Descreva as vantagens de contêineres efêmeros.
+
+R:
+
+As vantagens de utilizar contêineres efêmeros incluem:
+
+Escalabilidade Dinâmica: Permitem ajustar a quantidade de contêineres conforme a demanda, com criação e destruição rápidas.
+
+Eficiência de Recursos: Utilizam recursos apenas quando necessários, otimizando custos e infraestrutura.
+
+Facilidade de Atualizações: Novas versões podem ser implementadas facilmente, sem a necessidade de manter contêineres antigos.
+
+Isolamento e Segurança: Cada contêiner é isolado, o que facilita a segurança e a gestão de falhas.
+
+Resiliência: Falhas podem ser rapidamente corrigidas com a substituição do contêiner, sem impacto no sistema.
+
+Integração com CI/CD: Ideais para pipelines de integração e entrega contínua, facilitando testes e deploys automáticos.
+
+Ambientes Consistentes: Garantem que a aplicação seja executada no mesmo ambiente, independentemente do local de execução.
